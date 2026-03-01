@@ -1,6 +1,5 @@
-package com.tht.dream_shops.module.service.product;
+package com.tht.dream_shops.service.product;
 
-import com.tht.dream_shops.module.Category;
 import com.tht.dream_shops.module.Product;
 
 import java.util.List;
@@ -10,7 +9,7 @@ public interface IProductService {
 
     List<Product> getAllProducts();
 
-    Product getProductById(Long id);
+    Product getProductById(Long id) throws Throwable;
 
     void updateProduct(Product product, Long productId);
 
